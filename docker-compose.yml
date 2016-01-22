@@ -1,0 +1,11 @@
+sickrage:
+  image: needo/sickrage
+  volumes:
+   - /config:/config
+   - /downloads:/downloads
+   - /mnt/spinner/TV:/tv
+   - /etc/localtime:/etc/localtime:ro
+  environment:
+    EDGE: 1
+  ports:
+   - "8081:8081"
